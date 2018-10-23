@@ -36,7 +36,8 @@ public final class VoicePrint
     private final ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
     private final Lock r = rwl.readLock();
     private final Lock w = rwl.writeLock();
-    
+
+
     private double[] features;
     private int meanCount;
 
@@ -127,5 +128,10 @@ public final class VoicePrint
     public String toString() {
         return Arrays.toString(features);
     }
-    
+
+    public double[] getFeatures() {
+        return features;
+    }
+
+
 }

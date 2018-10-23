@@ -45,3 +45,7 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+recognito/\.idea/
+
+recognito/recognito\.iml
